@@ -1,0 +1,15 @@
+defaultNamespace: workshop-demo-app
+
+helm:
+  releaseName: workshop-demo-app
+  repo: https://bashofmann.github.io/workshop-demo-app-prepared/
+  chart: workshop-demo-app
+  version: 0.2.1
+  values:
+    ingress:
+      enabled: true
+      hosts:
+        - host: workshop-demo-app.workshop.plgrnd.be
+          paths:
+            - path: /
+              pathType: ImplementationSpecific
