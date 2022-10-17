@@ -4,7 +4,7 @@ helm:
   releaseName: workshop-demo-app
   repo: https://bashofmann.github.io/workshop-demo-app-prepared/
   chart: workshop-demo-app
-  version: 0.2.1
+  version: 0.2.2
   values:
     ingress:
       enabled: true
